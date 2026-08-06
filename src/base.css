@@ -1734,7 +1734,7 @@ ul, ol {
   height: 72%;
   background-color: #ffffff;
   border-radius: 0;
-  box-shadow: 0 -8px 30px rgba(50, 33, 19, 0.18);
+  box-shadow: none;
   transform: translateY(100%);
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), height 0.3s ease;
   z-index: 5;
