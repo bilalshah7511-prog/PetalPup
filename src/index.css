@@ -127,15 +127,24 @@ body {
   border-color: #3e2724 !important;
   font-weight: 700;
   box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  appearance: none;
+  -webkit-appearance: none;
   position: relative;
-  overflow: hidden;
   transition: background 0.2s ease, border-color 0.2s ease !important;
 }
 
-.add-to-cart-btn:hover,
-.checkout-cta:not(:disabled):hover {
+.add-to-cart-btn:hover {
   background: color-mix(in srgb, #3e2724 42%, #ffffff) !important;
   border-color: color-mix(in srgb, #3e2724 42%, #ffffff) !important;
+  color: #fff !important;
+}
+
+.checkout-cta:not(:disabled):hover {
+  background: #3e2724 !important;
+  border-color: #3e2724 !important;
   color: #fff !important;
 }
 
@@ -330,8 +339,8 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   }
 
   .cart-drawer__logo img {
-    height: 14px !important;
-    max-width: min(120px, 35vw) !important;
+    height: 20px !important;
+    max-width: min(168px, 49vw) !important;
   }
 
   .cart-drawer__body {
@@ -578,9 +587,9 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
 }
 
 .cart-drawer__logo img {
-  height: 16px !important;
+  height: 22px !important;
   width: auto !important;
-  max-width: min(130px, 36vw) !important;
+  max-width: min(182px, 50vw) !important;
   object-fit: contain !important;
   filter: none !important;
   display: block;
@@ -840,6 +849,7 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
 .checkout-flow {
   background: #fffbf7 !important;
   border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .checkout-sheet,
@@ -879,7 +889,7 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
 /* Safari login sheet: fully risen (JS adds --vv-lock) */
 .checkout-flow--vv-lock {
   background: #fffbf7 !important;
-  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.18) !important;
+  box-shadow: none !important;
   overflow: hidden !important;
   display: flex !important;
   flex-direction: column !important;
@@ -982,9 +992,9 @@ html.safari-typing .checkout-flow--vv-lock {
 }
 
 .checkout-sheet__brand--logo img {
-  height: 13px;
+  height: 18px;
   width: auto;
-  max-width: min(120px, 35vw);
+  max-width: min(168px, 49vw);
   object-fit: contain;
   display: block;
 }
@@ -998,6 +1008,39 @@ html.safari-typing .checkout-flow--vv-lock {
 .checkout-flow--verify .checkout-input {
   flex-shrink: 0;
   margin-bottom: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  filter: none !important;
+}
+
+.checkout-flow .checkout-input,
+.checkout-flow .checkout-input:focus,
+.checkout-flow .checkout-input:focus-visible,
+.checkout-flow select.checkout-input,
+.checkout-flow select.checkout-input:focus {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  filter: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkout-flow .checkout-cta,
+.checkout-flow .checkout-cta:focus,
+.checkout-flow .checkout-cta:focus-visible,
+.checkout-flow .checkout-cta:active,
+.checkout-flow--verify .checkout-sheet--pinned > .checkout-cta,
+.checkout-flow--verify button.checkout-cta,
+.checkout-flow--payment button.checkout-cta,
+.checkout-flow--shipping button.checkout-cta {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+  transform: none !important;
 }
 
 @media (min-width: 501px) and (max-width: 1024px) {
@@ -1266,9 +1309,9 @@ html.safari-typing .checkout-flow--vv-lock {
 }
 
 .site-logo img {
-  height: 14px !important;
+  height: 20px !important;
   width: auto;
-  max-width: min(130px, 36vw);
+  max-width: min(182px, 50vw);
   object-fit: contain;
 }
 
@@ -1326,9 +1369,9 @@ html.safari-typing .checkout-flow--vv-lock {
   }
 
   .site-logo img {
-    height: 12px !important;
+    height: 17px !important;
     width: auto !important;
-    max-width: min(110px, 29vw) !important;
+    max-width: min(154px, 41vw) !important;
     object-fit: contain !important;
   }
 
@@ -1484,9 +1527,9 @@ html.safari-typing .checkout-flow--vv-lock {
 
 .checkout-loader__logo {
   display: block !important;
-  height: clamp(14px, 3.5vw, 20px) !important;
+  height: clamp(20px, 4.9vw, 28px) !important;
   width: auto !important;
-  max-width: min(110px, 35vw) !important;
+  max-width: min(154px, 49vw) !important;
   object-fit: contain !important;
   filter: brightness(0) invert(1) !important;
 }
