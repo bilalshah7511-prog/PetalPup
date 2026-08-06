@@ -15,6 +15,8 @@ export default class ErrorBoundary extends Component {
     // keep UI alive
   }
 
+
+  
   componentDidUpdate(prevProps) {
     if (prevProps.resetKey !== this.props.resetKey && this.state.hasError) {
       this.setState({ hasError: false });
