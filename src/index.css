@@ -971,6 +971,16 @@ html.safari-typing .checkout-flow--vv-lock {
   padding: 14px 12px !important;
   min-height: 48px;
   border-radius: 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+}
+
+/* Verify CTAs: AA (all caps) — Guest / Member / Continue as guest */
+.checkout-flow--verify .verify-tab,
+.checkout-flow--verify .checkout-cta,
+.checkout-flow--verify button.checkout-cta {
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
 }
 
 .verify-tab:first-child {
